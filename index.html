@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sibel Gözen - IMDb</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header imdb-header">
+    <div class="container imdb-header-flex">
+      <div class="imdb-logo-box">
+        <img src="images/logo.png" alt="IMDb Logo" class="logo" />
+        <span class="menu-icon">☰ Menü</span>
+      </div>
+      <div class="search-box">
+        <select><option>Tüm</option></select>
+        <button class="search-btn">🔍</button>
+      </div>
+      <nav class="imdb-nav">
+        <a href="#">İzleme listesi</a>
+        <a href="#">Oturum aç</a>
+        <a href="#">TR ▼</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- PROFİL -->
+  <section class="profile-header">
+    <div class="container profile-flex">
+      <img src="images/director.jpg" alt="Sibel Gözen" class="profile-photo" />
+      <div>
+        <h1>Sibel Gözen</h1>
+        <p>Director</p>
+        <p class="known-for">
+          <a href="#" class="film-link">Dikenli Bahar</a> yönetmeni olarak tanınıyor.
+        </p>
+        <div class="list-box">Listeye ekle</div>
+        <div class="pro-links">
+          <a href="#">İletişim bilgileri</a> 
+          <a href="#">Acenta bilgisi</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BİLİNEN FİLMLER -->
+  <section class="known-section">
+    <div class="container">
+      <h2 class="section-title"><span class="line"></span>Bilinen Filmleri</h2>
+      <div class="known-grid">
+        <div class="known-card">
+          <div class="known-img">
+            <span class="plus-icon">+</span>
+            <img src="images/green screen.webp" alt="Film afişi" />
+          </div>
+          <div class="known-info">
+            <h3>Dikenli Bahar</h3>
+            <p><span class="star">★</span> 1</p>
+            <p>Yönetmen</p>
+            <p class="view-count">47 kişi izledi</p>
+          </div>
+          <span class="info-icon">i</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KEŞFET -->
+  <section class="discover-section">
+    <div class="container">
+      <h2 class="section-title"><span class="line"></span>Daha fazlasını keşfedin</h2>
+    </div>
+  </section>
+
+  <!-- OYUNCU EKİBİ -->
+  <section class="cast-section">
+    <div class="container">
+      <div class="cast-title">
+        <span class="title-bar"></span>
+        Tüm Oyuncular ve Ekip <span class="cast-count">(65)</span>
+        <span class="arrow">›</span>
+      </div>
+      <div class="cast-list" id="castList"></div>
+    </div>
+  </section>
+
+  <!-- KİŞİSEL BİLGİLER -->
+  <section class="personal-info">
+    <div class="container">
+      <h2>Kişisel Bilgiler</h2>
+      <p><strong>Meslek:</strong> Yönetmen</p>
+      <p><strong>Bilinen Filmi:</strong> Dikenli Bahar</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p>© Tüm hakları saklıdır.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

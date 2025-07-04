@@ -1,0 +1,394 @@
+/* Genel Ayarlar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  color: #03197e;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* HEADER - IMDb Stili */
+.imdb-header {
+  padding: 0.3rem 0;
+  background-color: #5d616a;
+}
+
+.imdb-header-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.imdb-logo-box {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo {
+  height: 32px;
+  max-height: 36px;
+  width: auto;
+  object-fit: contain;
+}
+
+.menu-icon {
+  color: white;
+  font-weight: 600;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 0.1rem 0.3rem;
+}
+
+.search-box select,
+.search-box input {
+  border: none;
+  padding: 0.3rem;
+  font-size: 0.85rem;
+  min-width: 200px;
+}
+
+.search-box button {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.imdb-nav a {
+  color: white;
+  margin-left: 1rem;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+/* PROFİL BAŞLIĞI */
+.profile-header {
+  padding: 2rem 0 1.5rem;
+  background-color: #121212;
+  color: #fff;
+}
+
+.profile-header h1 {
+  font-size: 2.5rem;
+}
+
+.profile-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.profile-flex {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* YÖNETMENLİK BİLGİSİ */
+.known-for {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+.film-link {
+  color: #0074cc; /* Mavi IMDb tonu */
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* FOTOĞRAF YÜKLEME BUTONU */
+.profile-header .upload-btn {
+  margin-top: 1rem;
+  background-color: #f5c518;
+  color: #000;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* LİSTEYE EKLE KUTUSU */
+.list-box {
+  background-color: #2a2a2a;
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 0.75rem 1.25rem;
+  border-radius: 30px;
+  margin: 1rem 0 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  border: none;
+  width: fit-content;
+}
+
+.list-box::before {
+  content: "+";
+  background-color: #3a3a3a;
+  color: #fff;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+}
+
+/* IMDbPro Bilgileri Satırı */
+.pro-links {
+  border-top: 1px solid #666;
+  margin-top: 1rem;
+  padding-top: 0.7rem;
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+.pro-links a {
+  color: #0074cc; /* Mavi IMDb tonu */
+  text-decoration: none;
+  margin: 0 0.25rem;
+}
+
+
+/* Bilinen bölüm stili */
+.known-section {
+  background: #fff;
+  padding: 3rem 0;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  color: #111;
+}
+
+.section-title .line {
+  width: 6px;
+  height: 24px;
+  background-color: #03197e;
+  margin-right: 10px;
+}
+
+.known-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.known-card {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 1rem;
+  flex: 1 1 100%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  position: relative;
+}
+
+.known-img {
+  position: relative;
+  margin-right: 1rem;
+}
+
+.known-img img {
+  width: 80px;
+  height: auto;
+  border-radius: 6px;
+}
+
+.plus-icon {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  background: #000;
+  color: #fff;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.known-info h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.known-info p {
+  margin: 4px 0;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.star {
+  color: #f5c518;
+  margin-right: 0.3rem;
+}
+
+.episode-link {
+  color: #0074cc;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.info-icon {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  background: #fff;
+  color: #005bbb;
+  border: 1px solid #005bbb;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+/* Daha fazlasını keşfedin başlığı */
+.discover-section {
+  padding: 2rem 0;
+}
+
+.discover-section .section-title {
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  color: #111;
+}
+
+.discover-section .section-title .line {
+  width: 5px;
+  height: 20px;
+  background-color: #03197e;
+  margin-right: 10px;
+}
+
+.cast-section {
+  padding: 2rem 1rem;
+  background-color: #fff;
+}
+
+.cast-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  color: #111;
+}
+
+.cast-title .title-bar {
+  width: 5px;
+  height: 24px;
+  background-color: #03197e;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.cast-count {
+  font-size: 1rem;
+  color: #666;
+  margin-left: 8px;
+}
+
+.cast-title .arrow {
+  color: #333;
+  margin-left: 6px;
+  font-size: 1.2rem;
+}
+
+.cast-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.2rem;
+}
+
+.cast-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cast-photo {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: #eee;
+}
+
+.cast-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cast-info strong {
+  font-size: 1rem;
+  color: #111;
+}
+
+.cast-info div {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.cast-meta {
+  font-size: 0.85rem;
+  color: #0074cc;
+  font-weight: 500;
+}
+
+/* KİŞİSEL BİLGİLER */
+.personal-info {
+  padding: 2rem 0;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  background-color: #ffffff;
+  color: #121212;
+}
+
+/* FOOTER */
+footer {
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 1rem;
+  color: #333;
+  font-size: 0.9rem;
+}
