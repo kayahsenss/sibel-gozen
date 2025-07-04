@@ -73,7 +73,7 @@ castData.forEach(person => {
   const card = document.createElement('div');
   card.className = 'cast-item';
   card.innerHTML = `
-    <img class="cast-photo" src="images/anonim.png" alt="${person.name}">
+    <img class="cast-photo" src="anonim.png" alt="${person.name}">
     <div class="cast-info">
       <strong>${person.name}</strong>
       <div>${person.role}</div>
